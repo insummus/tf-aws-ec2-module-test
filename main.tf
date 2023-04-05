@@ -124,12 +124,12 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-ebd02392"
-  instance_type          = "t2.micro"
-  key_name               = "user1"
-  monitoring             = true
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = var.user
+  monitoring             = var.monitoring
   vpc_security_group_ids = ["sg-12345678"]
-  subnet_id              = "subnet-eddcdzz4"
+  subnet_id              = var.subnet_id
 
   tags = {
     Terraform   = "true"

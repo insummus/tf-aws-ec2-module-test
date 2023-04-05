@@ -28,3 +28,30 @@ variable "aws_default_keyname" {
   default     = "txe-demo-key"
 }
 
+## Module Variables
+variable "ami" {
+  description = "Default ami id"
+  default     = "ami-ebd02392"
+}
+
+variable "key_name" {
+  description = "Default username"
+  default     = "user1"
+}
+
+
+variable "user" {
+  description = "Default username"
+  default     = "user1"
+}
+
+variable "monitoring" {
+  description = "Default monitoring"
+  default     = true
+}
+
+variable "subnet_id" {
+  description = "Default subnet_id"
+  default     = "subnet-eddcdzz4"
+}
+
