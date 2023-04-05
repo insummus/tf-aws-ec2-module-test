@@ -119,8 +119,8 @@ provider "aws" {
 # }
 
 module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "~> 3.0"
+  source  = "app.terraform.io/hcp-default-org/ec2-instance/aws"
+  version = "1.0.0"
 
   name = "single-instance"
 
